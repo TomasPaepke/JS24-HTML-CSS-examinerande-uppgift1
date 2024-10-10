@@ -18,7 +18,7 @@ header {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 3rem);
+    grid-template-rows: repeat(10, 3rem);
     background-color: #FFF;
 }
 .header__pic--plant {
@@ -36,7 +36,7 @@ header {
 .header__pic--dig {
     grid-column: 7 / 13 ;
     grid-row: 6 / 11;
-    background-color: #1E846D;
+    background-color: #0A846E;
     object-fit: scale-down;
     
 
@@ -59,9 +59,57 @@ header {
     
 }
 .header__menyn--p a {
-    padding: 10px 20px;
-    color: #1E846D;
+    padding: 10px 10px;
+    color: #0A846E;
     font-weight: bolder ;
     text-decoration: none;
+}
+main {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:repeat(12, 1fr);
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.main__stor--h2{
+    display:flex;
+    align-self: center;;
+    justify-self: center;
+    grid-column: 3 / 12;
+    color: #0A846E;
+    
+}
+.main__medium--h3 {
+    grid-column:7 / 11;
+    grid-row: 2/11;
+}
+
+.main__liten--p {
+    grid-column: 8 / 11;
+    grid-row: 3 / 5;
+    /* pixlar?*/
+    
+}
+.main__pic--sowing {
+    display: flex;
+    min-width: 8rem;
+    background-color: #0A846E;
+    height: fit-content;
+    border-radius: 50%;
+    grid-row: 2 / 6;
+    grid-column: 3 / 7;
+    
+
+}
+.main__knapp {
+    grid-row: 6/7;
+    grid-column: 11/12;
+}
+.knapp--sowing {
+    background-color: #0A846E;
+    height: 2rem;
+    color: #FFF;
+    border-radius: 5px;
+
 }
 
